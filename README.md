@@ -1,6 +1,6 @@
 # SEARCH ALGORITHM FOR 8 PUZZLE GAME
-By: Guillermo Andres De Mendoza Corrales, Colombia, Bogota D.C.
-Language: Python 3.6
+By: Guillermo Andres De Mendoza Corrales, Colombia, Bogota D.C.<br />
+Language: Python 3.6<br />
 Description: Some search solutions for 8 puzzle game, implementing these algorithms: 
 -Breadth-First Search
 -Depth-First Search
@@ -19,6 +19,8 @@ It uses the opposite strategy as depth-first search, which instead explores the 
 
 BFS and its application in finding connected components of graphs were invented in 1945 by Konrad Zuse and Michael Burke, in their (rejected) Ph.D. thesis on the Plankalkül programming language, but this was not published until 1972. It was reinvented in 1959 by Edward F. Moore, who used it to find the shortest path out of a maze, and later developed by C. Y. Lee into a wire routing algorithm (published 1961).
 
+Link: wikipedia -> https://en.wikipedia.org/wiki/Breadth-first_search
+
 ### Depth-First Search
 
 ![DFS](https://github.com/memoodm/AI-Search-8Puzzle/blob/master/images/DFS.gif)
@@ -27,6 +29,8 @@ Is an algorithm for traversing or searching tree or graph data structures. The a
 
 A version of depth-first search was investigated in the 19th century by French mathematician Charles Pierre Trémaux as a strategy for solving mazes
 
+Link: wikipedia -> https://en.wikipedia.org/wiki/Depth-first_search
+
 ### A*
 
 ![Astart](https://github.com/memoodm/AI-Search-8Puzzle/blob/master/images/Astar.gif)
@@ -34,8 +38,10 @@ A version of depth-first search was investigated in the 19th century by French m
 A* (pronounced as "A star") is a computer algorithm that is widely used in pathfinding and graph traversal, which is the process of plotting an efficiently directed path between multiple points, called "nodes". It enjoys widespread use due to its performance and accuracy. However, in practical travel-routing systems, it is generally outperformed by algorithms which can pre-process the graph to attain better performance, although other work has found A* to be superior to other approaches.
 
 Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now SRI International) first published the algorithm in 1968.[3] It is an extension of Edsger Dijkstra's 1959 algorithm. A* achieves better performance by using heuristics to guide its search.
+
+Link: wikipedia -> https://en.wikipedia.org/wiki/A*_search_algorithm
   
-### Artefactos del proyecto
+### Language
 | Artefacto | Descripcion | Contenedor | Tipo | Port |
 | ------ | ------ | ------ | ------ | ------ |
 | apache-camel-jaxrs | Logica del bus, la cual realiza la coreografia de servicios | jbossFuse | jar | 9000

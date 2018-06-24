@@ -46,32 +46,28 @@ Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now
 
 Link: wikipedia -> https://en.wikipedia.org/wiki/A*_search_algorithm
   
-### Language
-| Artefacto | Descripcion | Contenedor | Tipo | Port |
-| ------ | ------ | ------ | ------ | ------ |
-| apache-camel-jaxrs | Logica del bus, la cual realiza la coreografia de servicios | jbossFuse | jar | 9000
-| API-Servicios | Selector de consumo de servicios segun los parametros del artefacto ROUTING dependiendo de los parametros y el servicio seleccionado | glassfish | war | 8080
-| FRONT | Prueba grafica de la coreografia del bus al enviarle solicitudes | glassfish | war | 8080
-| ROUTING | servicio contenedor de las rutas y administrador de subscripciones de los servicios expustos | docker | docker | 8888
-| W1-REST-Service | servicio que expone un end point en rest | docker | docker | 8081
-| W1-SOAP-Service | servicio que expone un end point en soap | docker | docker | 8082
 
-### Project start
+## Project input
 
-Ejecutar el archivo de comando:
+Execute python via comand prompt:
 ```sh
-start.bat
+python driver.py 'method' 'board state'
 ```
-El cual esta compuesto por los comandos:
+Where method is the algorithm selected for finding a solution path, and board state is the initial board of the game to start finding a solvable path <br/>
+
+Example bfs:
 ```sh
-start servers\jboss-fuse-6.3.0.redhat-187\bin\fuse.bat
-start servers\GlassFish_Server\glassfish\bin\startserv.bat
-docker pull memoodm/services:service_1_rest
-docker pull memoodm/services:service_2_soap
-docker pull memoodm/services:apiSelector
-docker run -d -p 8081:8080 memoodm/services:service_1_rest
-docker run -d -p 8082:8080 memoodm/services:service_2_soap
-docker run -d -p 8888:8080 memoodm/services:Routing
+python driver.py bfs 8,6,4,2,1,3,5,7,0
+```
+
+Example dfs:
+```sh
+python driver.py dfs 1,2,5,3,4,8,6,7,0
+```
+
+Example ast:
+```sh
+python driver.py ast 1,2,5,3,4,8,6,7,0
 ```
 
 ### Descripcion de start

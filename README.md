@@ -1,13 +1,18 @@
 # SEARCH ALGORITHM FOR 8 PUZZLE GAME
-By: Guillermo Andres De Mendoza Corrales, Colombia, Bogota D.C.<br />
+By: Guillermo Andres De Mendoza Corrales, memoodm@gmail.com, Colombia, Bogota D.C.<br />
 Language: Python 3.6<br />
 Description: Some search solutions for 8 puzzle game, implementing these algorithms: 
 - Breadth-First Search
 - Depth-First Search
 - A*
 
+## 1. 8 Puzzle game
 
-## 1. Conceptual background
+![BFS](https://github.com/memoodm/AI-Search-8Puzzle/blob/master/images/8Puzzle.jpg)
+
+The 8-puzzle (also called Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic Square and many others) is a 3x3 sliding puzzle that consists of a frame of eight numbered square tiles in random order with one tile missing
+
+## 2. Conceptual background algorrithm
 
 ### Breadth-First Search
 

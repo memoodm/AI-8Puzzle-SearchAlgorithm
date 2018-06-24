@@ -46,8 +46,37 @@ Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now
 
 Link: wikipedia -> https://en.wikipedia.org/wiki/A*_search_algorithm
   
+## 3. Heuristic selected
+In the A* solution the manhattan distance is implemented as a function of estimating the distance to goal, by assigning negative score in each number for the total number of squares away from its goal possition 
 
-## 3. Project input
+```sh
+values_0 = [0,1,2,1,2,3,2,3,4]
+values_1 = [1,0,1,2,1,2,3,2,3]
+values_2 = [2,1,0,3,2,1,4,3,2]
+values_3 = [1,2,3,0,1,2,1,2,3]
+values_4 = [2,1,2,1,0,1,2,1,2]
+values_5 = [3,2,1,2,1,0,3,2,1]
+values_6 = [2,3,4,1,2,3,0,1,2]
+values_7 = [3,2,3,2,1,2,1,0,1]
+values_8 = [4,3,2,3,2,1,2,1,0]
+
+def Heuristic(node):
+
+    global values_0,values_1,values_2,values_3,values_4,values_5,values_6,values_7,values_8   
+    v0=values_0[node.index("0")]
+    v1=values_1[node.index("1")]
+    v2=values_2[node.index("2")]
+    v3=values_3[node.index("3")]
+    v4=values_4[node.index("4")]
+    v5=values_5[node.index("5")]
+    v6=values_6[node.index("6")]
+    v7=values_7[node.index("7")]
+    v8=values_8[node.index("8")]
+    valorTotal = v0+v1+v2+v3+v4+v5+v6+v7+v8
+    return valorTotal
+```
+
+## 4. Project input
 
 Execute python via comand prompt:
 ```sh
@@ -70,11 +99,11 @@ Example ast:
 python driver.py ast 1,2,5,3,4,8,6,7,0
 ```
 
-### 4. Project output
+### 5. Project output
 
 There are two different outputs for the project:
 
-## 4.1 Print line in command prompt
+## 5.1 Print line in command prompt
 Show the variables of the path that best solve the starting board, Example:
 ```sh
 C:\Users\Admin\Desktop\AI\Search>python driver.py bfs 8,6,4,2,1,3,5,7,0
@@ -87,7 +116,7 @@ running_time: 3.97613275
 ```
 
 
-## 4.2 Output plain text file
+## 5.2 Output plain text file
 Generate a plain text file that ilustrate the variables of the path that best solve the starting board, Example:
 ```sh
 path_to_goal: ['Left', 'Up', 'Up', 'Left', 'Down', 'Right', 'Down', 'Left', 'Up', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Down', 'Down', 'Right', 'Up', 'Left', 'Up', 'Left']

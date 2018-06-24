@@ -99,11 +99,11 @@ Example ast:
 python driver.py ast 1,2,5,3,4,8,6,7,0
 ```
 
-### 5. Project output
+## 5. Project output
 
 There are two different outputs for the project:
 
-## 5.1 Print line in command prompt
+### 5.1 Print line in command prompt
 Show the variables of the path that best solve the starting board, Example:
 ```sh
 C:\Users\Admin\Desktop\AI\Search>python driver.py bfs 8,6,4,2,1,3,5,7,0
@@ -116,7 +116,7 @@ running_time: 3.97613275
 ```
 
 
-## 5.2 Output plain text file
+### 5.2 Output plain text file
 Generate a plain text file that ilustrate the variables of the path that best solve the starting board, Example:
 ```sh
 path_to_goal: ['Left', 'Up', 'Up', 'Left', 'Down', 'Right', 'Down', 'Left', 'Up', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Down', 'Down', 'Right', 'Up', 'Left', 'Up', 'Left']

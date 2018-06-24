@@ -1,5 +1,5 @@
 # SEARCH ALGORITHM FOR 8 PUZZLE GAME
-By: Guillermo Andres De Mendoza Corrales, memoodm@gmail.com, Colombia, Bogota D.C.<br />
+<b>By: Guillermo Andres De Mendoza Corrales </b>, memoodm@gmail.com, Colombia, Bogota D.C.<br />
 Language: Python 3.6<br />
 Description: Some search solutions for 8 puzzle game, implementing these algorithms: 
 - Breadth-First Search

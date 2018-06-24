@@ -8,7 +8,7 @@ Description: Some search solutions for 8 puzzle game, implementing these algorit
 
 ## 1. 8 Puzzle game
 
-![BFS](https://github.com/memoodm/AI-Search-8Puzzle/blob/master/images/8Puzzle.jpg)
+![8puzzle](https://github.com/memoodm/AI-Search-8Puzzle/blob/master/images/8Puzzle.JPG)
 
 The 8-puzzle (also called Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic Square and many others) is a 3x3 sliding puzzle that consists of a frame of eight numbered square tiles in random order with one tile missing
 

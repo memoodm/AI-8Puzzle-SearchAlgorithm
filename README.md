@@ -47,7 +47,7 @@ Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute (now
 Link: wikipedia -> https://en.wikipedia.org/wiki/A*_search_algorithm
   
 
-## Project input
+## 3. Project input
 
 Execute python via comand prompt:
 ```sh
@@ -70,27 +70,30 @@ Example ast:
 python driver.py ast 1,2,5,3,4,8,6,7,0
 ```
 
-### Descripcion de start
-Inicia el servidor de jboss, el cual incluye el artefacto de apache camel
+### 4. Project output
+
+There are two different outputs for the project:
+
+## 4.1 Print line in command prompt
+Show the variables of the path that best solve the starting board, Example:
 ```sh
-start servers\jboss-fuse-6.3.0.redhat-187\bin\fuse.bat
-```
-Inicia el servidor de glassfish el cual contiene los api's de seleccion de servicios y el testing grafico del aplicativo
-```sh
-start servers\GlassFish_Server\glassfish\bin\startserv.bat
-```
-Descarga los docker de servicios utilizados por el proyecto
-```sh
-docker pull memoodm/services:service_1_rest
-docker pull memoodm/services:service_2_soap
-docker pull memoodm/services:apiSelector
-```
-Ejecuta los servicios en docker
-```sh
-docker run -d -p 8081:8080 memoodm/services:service_1_rest
-docker run -d -p 8082:8080 memoodm/services:service_2_soap
-docker run -d -p 8888:8080 memoodm/services:Routing
+C:\Users\Admin\Desktop\AI\Search>python driver.py bfs 8,6,4,2,1,3,5,7,0
+path:  ['Left', 'Up', 'Up', 'Left', 'Down', 'Right', 'Down', 'Left', 'Up', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Down', 'Down', 'Right', 'Up', 'Left', 'Up', 'Left']
+cost:  26
+nodes expanded:  166786
+search_depth:  26
+MaxSearchDeep:  27
+running_time: 3.97613275
 ```
 
 
-
+## 4.2 Output plain text file
+Generate a plain text file that ilustrate the variables of the path that best solve the starting board, Example:
+```sh
+path_to_goal: ['Left', 'Up', 'Up', 'Left', 'Down', 'Right', 'Down', 'Left', 'Up', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Down', 'Down', 'Right', 'Up', 'Left', 'Up', 'Left']
+cost_of_path: 26
+nodes_expanded: 166786
+search_depth: 26
+max_search_depth: 27
+running_time: 3.97613275
+```

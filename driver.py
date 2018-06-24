@@ -2,7 +2,7 @@ import argparse
 import time
 import timeit
 from collections import deque
-#import resource
+
 
 #Information *****************************************************
 class PuzzleState:
@@ -376,10 +376,11 @@ def main():
     print("nodes expanded: ",str(NodesExpanded))
     print("search_depth: ",str(deep))
     print("MaxSearchDeep: ",str(MaxSearchDeep))
+    print("running_time: ",format(time, '.8f'))
     #'''
 
     #Generate output document for grade system
-    '''
+    #'''
     file = open('output.txt', 'w')
     file.write("path_to_goal: " + str(moves) + "\n")
     file.write("cost_of_path: " + str(len(moves)) + "\n")
@@ -387,9 +388,8 @@ def main():
     file.write("search_depth: " + str(deep) + "\n")
     file.write("max_search_depth: " + str(MaxSearchDeep) + "\n")
     file.write("running_time: " + format(time, '.8f') + "\n")
-    file.write("\nmax_ram_usage: " + format(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1000.0, '.8f'))      
     file.close()
-    '''
+    #'''
 
 if __name__ == '__main__':
     main()

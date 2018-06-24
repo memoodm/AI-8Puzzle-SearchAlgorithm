@@ -2,9 +2,9 @@
 By: Guillermo Andres De Mendoza Corrales, Colombia, Bogota D.C.<br />
 Language: Python 3.6<br />
 Description: Some search solutions for 8 puzzle game, implementing these algorithms: 
--Breadth-First Search
--Depth-First Search
--A*
+- Breadth-First Search
+- Depth-First Search
+- A*
 
 
 ## 1. Conceptual background
